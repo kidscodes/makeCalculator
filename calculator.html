@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <form class="calculator" name="main_cal">
+
+        <input type="text" class="ans-box" name="ans_cal" readonly="">
+
+        <span class="number clear" onclick="document.main_cal.ans_cal.value =''">c</span>
+        <span class="number bhag" onclick="document.main_cal.ans_cal.value +='/'">/</span>
+        <span class="number ghun" onclick="document.main_cal.ans_cal.value +='* '">*</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='7'">7</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='8'">8</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='9'">9</span>
+        <span class="number biyog" onclick="document.main_cal.ans_cal.value +='-'">-</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='4'">4</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='5'">5</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='6'">6</span>
+        <span class="number plush" onclick="document.main_cal.ans_cal.value +='+'">+</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value   +='1'">1</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='2'">2</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='3'">3</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='0'">0</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='00'">00</span>
+        <span class="number" onclick="document.main_cal.ans_cal.value +='.'">.</span>
+        <span class="number equal" onclick="document.main_cal.ans_cal.value = eval(main_cal.ans_cal.value)">=</span>
+	</form>
+	
+	<script> </script>
+	
+</body>
+
+</html>
